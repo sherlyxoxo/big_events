@@ -27,11 +27,10 @@
   });
 })()
 
-// 自己的js
-;(function(){
 
 
-// 封装调用用户信息函数
+
+// 在全局封装调用用户信息函数
 function getUserInfo(){
   $.ajax({
     type:'GET',
@@ -60,7 +59,8 @@ function getUserInfo(){
   })
 }
 
-// 封装渲染用户头像的函数 
+
+// 在全局封装渲染用户头像的函数 
 function renderAvatar(user){
   // 1.获取用户名称
 let name = user.nickname ||user.username
@@ -71,7 +71,7 @@ document.querySelector('.welcome').innerHTML=`欢迎 ${name}!`
 if(user.user_pic!==null){
   // 1）修改图片头像的属性
   document.querySelectorAll('.layui-nav-img').forEach(function(item){
-    item.src=user_pic
+    item.src=user.user_pic
     item.style.display='inline-block'
   })
 
@@ -86,10 +86,18 @@ if(user.user_pic!==null){
 }
 }
 
+
+
+
+
+
+
+
+// 自己的js
+;(function(){
+
 // 调用用户信息并渲染头像
 getUserInfo()
-
-
 // 点击退出
 document.querySelector('#btn_logOut').addEventListener('click',function(){
 //  提示用户是否退出
