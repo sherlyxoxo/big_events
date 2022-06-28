@@ -1,0 +1,28 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #f2f3f5;
+  padding: 15px;
+}
+.layui-card .layui-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.layui-card .layui-card-header #add {
+  height: 28px;
+  line-height: 28px;
+  padding: 0 10px;
+}
+.layui-card .layui-table button {
+  height: 25px;
+  line-height: 25px;
+  padding: 0 8px;
+}
+.layui-form {
+  padding-top: 20px;
+  padding-right: 30px;
+}

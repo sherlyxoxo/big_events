@@ -1,4 +1,6 @@
-;(function(){
+window.onload=function(){
+
+
 
 // 自定义表单验证规则
 let form = layui.form;
@@ -55,4 +57,4 @@ $.ajax({
 })
 
 
-})()
+}

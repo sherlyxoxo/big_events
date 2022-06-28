@@ -1,5 +1,5 @@
 // layui 的js
-;(function(){
+
   layui.use(['element', 'layer', 'util'], function(){
     var element = layui.element
     ,layer = layui.layer
@@ -25,7 +25,7 @@
     });
     
   });
-})()
+
 
 
 
@@ -94,9 +94,9 @@ if(user.user_pic!==null){
 
 
 // 自己的js
-;(function(){
+window.onload=function(){
 
-// 调用用户信息并渲染头像
+  // 调用用户信息并渲染头像
 getUserInfo()
 // 点击退出
 document.querySelector('#btn_logOut').addEventListener('click',function(){
@@ -114,4 +114,6 @@ document.querySelector('#btn_logOut').addEventListener('click',function(){
 
 
 
-})()
+
+}
+

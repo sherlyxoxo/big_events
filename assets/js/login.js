@@ -1,4 +1,5 @@
-;(function(){
+window.onload=function(){
+
 
 
 // 切换登录注册
@@ -119,6 +120,4 @@ form_log.addEventListener('submit',function(e){
 
 
 
-
-
-})()
+}

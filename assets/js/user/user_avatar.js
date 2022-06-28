@@ -1,4 +1,4 @@
- ;(function(){
+window.onload=function(){
 
 
     
@@ -31,7 +31,7 @@ document.querySelector('#btn_choose').addEventListener('click',function(){
 document.querySelector('#file').addEventListener('change',function(e){
    let files= e.target.files
 //    检测是否选择图片
-   if(files.length===0) return layui.layer.masg('请选择图片!')
+   if(files.length===0) return layui.layer.msg('请选择图片!')
    
    
 //  4.更换图片
@@ -76,5 +76,5 @@ $image
 
 
 
- })()
+}
  
